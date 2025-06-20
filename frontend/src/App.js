@@ -8,7 +8,7 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import History from './History/History';
 import Income from './Components/Income/Income'
 import Expenses from './Components/Expenses/Expenses';
-import Analytics from './components/Analytics/Analytics';
+import Analytics from './Components/Analytics/Analytics';
 import { useGlobalContext } from './context/globalContext';
 
 function App() {
