@@ -17,20 +17,21 @@ function App() {
   const global = useGlobalContext()
   console.log(global);
 
-  const displayData = () => {
-    switch(active){
-      case 1:
-        return <Dashboard />
-      case 2:
-        return <Analytics /> 
-      case 3:
-        return <Income />
-      case 4: 
-        return <Expenses />
-      default: 
-        return <Dashboard />
-    }
+ const displayData = () => {
+  switch(active){
+    case 1:
+      return <Dashboard />
+    case 2:
+      return <Analytics />  
+    case 3:
+      return <Income />
+    case 4: 
+      return <Expenses />
+    default: 
+      return <Dashboard />
   }
+}
+
 
   const orbMemo = useMemo(() => {
     return <Orb />
