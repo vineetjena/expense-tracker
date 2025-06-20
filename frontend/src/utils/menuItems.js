@@ -1,25 +1,29 @@
-import { dashboard, expenses, transactions, trend, rupee } from './Icons'  
+import { dashboard, expenses, transactions, trend } from '../utils/Icons'
 
 
 export const menuItems = [
     {
         id: 1,
-        title: "Dashboard",
+        title: 'Dashboard',
         icon: dashboard,
+        link: '/dashboard'
     },
     {
         id: 2,
-        title: "Analytics",         
-        icon: trend,     
+        title: 'Analytics',           
+        icon: transactions,         
+        link: '/analytics'
     },
     {
         id: 3,
-        title: "Income",
+        title: "Incomes",
         icon: trend,
+        link: "/incomes"
     },
     {
         id: 4,
         title: "Expenses",
         icon: expenses,
+        link: "/expenses"
     },
-];
+]
