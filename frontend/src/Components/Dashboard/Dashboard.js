@@ -77,14 +77,16 @@ const DashboardStyled = styled.div`
         .chart-con{
             grid-column: 1 / 4;
             height: 400px;
-            .amount-con{
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                gap: 2rem;
-                margin-top: 2rem;
-                .income, .expense{
-                    grid-column: span 2;
-                }
+            .amount-con {
+                        display: flex; /* changed from grid */
+                        justify-content: space-between;
+                        gap: 2rem;
+                        margin-top: 2rem;
+                    
+                        .income, .expense, .balance {
+                            flex: 1; /* makes each card equal width */
+                        }
+                    }
                 .income, .expense, .balance{
                     background: #FCF6F9;
                     border: 2px solid #FFFFFF;
