@@ -1,4 +1,5 @@
-import {dashboard, expenses, transactions, trend} from '../utils/Icons'
+import { dashboard, expenses, transactions, trend } from '../utils/Icons'
+import { FaChartPie } from 'react-icons/fa' 
 
 export const menuItems = [
     {
@@ -7,17 +8,18 @@ export const menuItems = [
         icon: dashboard,
         link: '/dashboard'
     },
-    
+    {
+        id: 2,
+        title: 'Analytics',           
+        icon: <FaChartPie />,         
+        link: '/analytics'
+    },
     {
         id: 3,
         title: "Incomes",
         icon: trend,
-        link: "/dashboard",
+        link: "/incomes"
     },
     {
         id: 4,
         title: "Expenses",
-        icon: expenses,
-        link: "/dashboard",
-    },
-]
