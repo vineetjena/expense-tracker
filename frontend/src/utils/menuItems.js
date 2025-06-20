@@ -1,25 +1,25 @@
-import { dashboard, expenses, transactions, trend } from '../utils/Icons'
-import { FaChartPie } from 'react-icons/fa' 
+import { dashboard, expenses, transactions, trend, rupee } from './Icons'  
+import { FaChartPie } from 'react-icons/fa';  
 
 export const menuItems = [
     {
         id: 1,
-        title: 'Dashboard',
+        title: "Dashboard",
         icon: dashboard,
-        link: '/dashboard'
     },
     {
         id: 2,
-        title: 'Analytics',           
-        icon: <FaChartPie />,         
-        link: '/analytics'
+        title: "Analytics",         
+        icon: <FaChartPie />,     
     },
     {
         id: 3,
-        title: "Incomes",
+        title: "Income",
         icon: trend,
-        link: "/incomes"
     },
     {
         id: 4,
         title: "Expenses",
+        icon: expenses,
+    },
+];
