@@ -8,12 +8,7 @@ export const menuItems = [
         icon: dashboard,
         link: '/dashboard'
     },
-    {
-        id: 2,
-        title: 'Analytics',           
-        icon: transactions,         
-        link: '/analytics'
-    },
+   
     {
         id: 3,
         title: "Incomes",
