@@ -1,5 +1,5 @@
 import { dashboard, expenses, transactions, trend, rupee } from './Icons'  
-import { FaChartPie } from 'react-icons/fa';  
+
 
 export const menuItems = [
     {
@@ -10,7 +10,7 @@ export const menuItems = [
     {
         id: 2,
         title: "Analytics",         
-        icon: <FaChartPie />,     
+        icon: trend,     
     },
     {
         id: 3,
