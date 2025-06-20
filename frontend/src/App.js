@@ -8,6 +8,7 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import History from './History/History';
 import Income from './Components/Income/Income'
 import Expenses from './Components/Expenses/Expenses';
+import Analytics from './components/Analytics/Analytics';
 import { useGlobalContext } from './context/globalContext';
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
     switch(active){
       case 1:
         return <Dashboard />
-      
+      case 2:
+        return <Analytics /> 
       case 3:
         return <Income />
       case 4: 
